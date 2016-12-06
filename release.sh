@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 android_sdk_install() {
-    [[ $# != 3 ]] || {
+    [[ $# == 3 ]] || {
         echo "expected three argument(s), exiting!"
         return 1
     }
@@ -20,7 +20,7 @@ android_sdk_install() {
 }
 
 android_sdk_build_tools_install() {
-    [[ $# != 1 ]] || {
+    [[ $# == 1 ]] || {
         echo "expected one argument(s), exiting!"
         return 1
     }
@@ -30,7 +30,7 @@ android_sdk_build_tools_install() {
 }
 
 keystore_create_if_not_exists() {
-    [[ $# != 6 ]] || {
+    [[ $# == 6 ]] || {
         echo "expected six argument(s), exiting!"
         return 1
     }
@@ -72,7 +72,7 @@ jq_install() {
 }
 
 nvm_install() {
-    [[ $# != 2 ]] || {
+    [[ $# == 2 ]] || {
         echo "expected two argument(s), exiting!"
         return 1
     }
@@ -89,7 +89,7 @@ nvm_install() {
 
 release() {
 
-    [[ $# != 11 ]] || {
+    [[ $# == 11 ]] || {
         echo "expected eleven argument(s), exiting!"
         return 1
     }
@@ -99,7 +99,6 @@ release() {
     keystore_key_alias=$3
     keystore_store_password=$4
     keystore_key_password=$5
-
     cert_cn="$6"
     cert_ou="$7"
     cert_o="$8"
