@@ -3,6 +3,8 @@
 
 > run android apk release builds from a continuous-integration environment
 
+this set of shell functions makes it trivial to automate the installation of android build tools and run gradle release build configurations. it is assumed that you are using gradle to do multiple apk builds per instruction set.
+
 ## example
 
 ```bash
