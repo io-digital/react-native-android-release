@@ -25,7 +25,7 @@ release "/srv/releases" \ # apk output prefix
         "your organisation" \ # certificate O
         "your city" \ # certificate L
         "your province" \ # certificate S
-        "two-letter country code" \ # certificate C
+        "two-letter country code" # certificate C
 ```
 
 ## todo
